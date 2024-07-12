@@ -10,6 +10,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
+
+    <LinearLayout
+        android:id="@+id/facebook_login"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="260dp"
+        android:background="@drawable/rounded_btn2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="2dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/my_icon" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@android:color/transparent"
+            android:text="     Log in with Facebook"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </Button>
+    </LinearLayout>
+
     <TextView
         android:id="@+id/q1"
         android:layout_width="wrap_content"
@@ -21,7 +55,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintVertical_bias="0.13"
-        android:text="?"
+        android:text=" ?"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"/>
@@ -33,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/facebook_login"
         android:layout_marginTop="20dp"
-        android:text="?"
+        android:text=" ?"
         android:textColor="@color/white"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -50,7 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/facebook_login"
         android:layout_marginTop="20dp"
-        android:text="?"
+        android:text=" ? "
         android:textColor="@color/white"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -61,16 +95,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.16" />
 
-    <ImageButton
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:src="@drawable/my_icon"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62" />
+
 
     <ImageView
         android:layout_width="84dp"
@@ -138,21 +163,6 @@
         android:textStyle="bold"/>
 
 
-    <Button
-        android:id="@+id/facebook_login"
-        android:layout_width="330dp"
-        android:layout_height="45dp"
-        android:layout_marginEnd="4dp"
-        android:background="@drawable/rounded_btn2"
-        android:backgroundTint="#FFFF"
-        android:text="     Log in with Facebook "
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.625" />
 
     <Button
         android:id="@+id/game_now"
